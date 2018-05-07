@@ -25,8 +25,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'sendgrid-ruby'
 
 
-gem 'sendgrid-ruby'
-
 gem 'stripe'
 
 gem 'mailgun-ruby', '~>1.1.6'
