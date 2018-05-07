@@ -47,7 +47,7 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def game_params
-      params.require(:profile).permit(:name, :age, :location, :bio)
+      params.require(:profile).permit(:name, :age, :location, :bio, :profilepicture, :favouritegames)
     end
 
 end
