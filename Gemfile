@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'sendgrid-ruby'
 
+gem 'fog-aws'
 
 gem 'stripe'
 
@@ -35,7 +36,7 @@ gem "figaro"
 
 gem 'bootstrap', '~> 4.1.1'
 
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

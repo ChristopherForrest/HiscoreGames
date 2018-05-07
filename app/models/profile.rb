@@ -1,5 +1,5 @@
 class Profile < ApplicationRecord
-    #mount_uploader :profilepicture, ProfileUploader
+    mount_uploader :profilepicture, ProfileUploader
     validates :user_id, uniqueness:{
     message: "profile exists"}
   

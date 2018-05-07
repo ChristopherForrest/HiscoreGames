@@ -58,5 +58,13 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'https://hiscore-au.herokuapp.com/' }
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  :authentication => :plain,
+  :address => "smtp.mailgun.org",
+  :port => 587,
+  :domain => "sandbox75ae38d16c2c4e8d984519e322cb709d.mailgun.org",
+  :user_name => "postmaster",
+  :password => "c5cdf9f02404e2d6d452c65c0e278f9c-116e1e4d-a18dff34"
 }
 end

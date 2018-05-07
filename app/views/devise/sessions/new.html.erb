@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example</title>
-  <link rel="stylesheet" href="/assets/application.scss">
-  <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
-  <link rel="canonical" href="http://example.com/">
-  <meta name="description" content="…">
-</head>
+<nav class="navbar sticky-top navbar-light" style="background-color:black; height:55px; border-bottom:white 3px solid;" >
+    <a href="/games"><img class='icon' src="/assets/Hiscore.jpg" width="50" height="50" alt=""></a>
+    
+     <%if user_signed_in?%>
+     <a class="btn btn-primary" href="/games/new">New Game</a>
+     <a class="btn btn-primary"<%= link_to('Log Out', destroy_user_session_path, method: :delete) %>></a>
+      <!-- <%= link_to 'New Game', new_game_path %> -->
+        <% else %>
+        <a class="btn btn-primary" href="/users/sign_in" role="button" id="CreateAccount">Login</a> 
+        <a class="btn btn-primary" href="/users/sign_up" role="button" id="CreateAccount">Create Account</a>
+     <%end%>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search Users" aria-label="Search">
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
 
 
 
