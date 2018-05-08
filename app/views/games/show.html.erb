@@ -19,6 +19,21 @@
 <div class="container">
     <div id="gameform" class="form-group">
     <a><img class="GamePictureShow"  src="/assets/NoPhoto"></a>
+
+<div class="paybutton text-center">
+    <form action="your-server-side-code" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+    data-amount="@game.price"
+    data-name="Hiscore.com"
+    data-description="Payment"
+    data-image="/assets/Hiscore.jpg"
+    data-locale="auto"
+    data-zip-code="true">
+  </script>
+  </form>
+</div>
     <hr>
 <div class="col-12">
 
@@ -56,7 +71,7 @@
 </div>
 <hr>
 <div class="text-center">
-<span><a id="formbutton" class="btn btn-primary btn-sx" href="/games/">Purchase</a><span>
+
 <span><a id="formbutton" class="btn btn-primary btn-sx" href="/games/">Back</a><span>
 </div>
 </div>

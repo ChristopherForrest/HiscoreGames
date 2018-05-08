@@ -8,6 +8,7 @@
 }
 
 #test{
+  margin-bottom:20px;
   height:230px;
   width:100%; 
 }
@@ -21,7 +22,7 @@
 
  body{
 background-color:teal;
-background-color:teal;
+background-color: steelblue;
 }
 
 // h1{ 
@@ -86,13 +87,13 @@ background-color:teal;
 //     background-color: red;
 //     display: table;
 //   }
-  .errormessage {
-    width: 450px;
-    border: 2px solid red;
-    padding: 7px 7px 0;
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
-}
+//   .errormessage {
+//     width: 450px;
+//     border: 2px solid red;
+//     padding: 7px 7px 0;
+//     margin-bottom: 20px;
+//     background-color: #f0f0f0;
+// }
 //     h2 {
 //       text-align: left;
 //       font-weight: bold;
@@ -150,7 +151,10 @@ background-color:teal;
     background-color:whitesmoke;
     margin:2%;
     padding:2%;
-    border:grey 2px solid;
+    border:rgb(92, 91, 91) 2px solid;
+    -webkit-box-shadow: 1px 0px 31px 19px rgba(219,219,219,0.27);
+-moz-box-shadow: 1px 0px 31px 19px rgba(219,219,219,0.27);
+box-shadow: 1px 0px 31px 19px rgba(219,219,219,0.27);
  }
 
 // .fields{
@@ -179,7 +183,7 @@ background-color:teal;
   height:100%;
   border-radius:2%;
   margin-top:5%;   
-  border:grey 2px solid;
+  border:black 1px solid;
  
 }
 
@@ -298,3 +302,8 @@ li{
   color:red;
 }
 
+
+
+.paybutton{
+  padding:2px;
+}
