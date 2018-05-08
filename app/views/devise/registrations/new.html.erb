@@ -15,34 +15,36 @@
     </form>
 </nav>
 
-<h2>Sign up</h2>
 
+ <div class="container">
+    <div id="form" class="form-group">
+    <h2 class="formname">Sign up</h2>
+   <!--   <img src="/assets/Icon.png" class="formicon"> -->
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+  <li class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+  </li>
 
-  <div class="field">
+  <li class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+    <%= f.password_field :password, autocomplete: "off", class:"form-control" %>
+  </li>
 
-  <div class="field">
+  <li class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+    <%= f.password_field :password_confirmation, autocomplete: "off" , class:"form-control"%>
+  </li>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <li><%= f.submit "Sign up", class:"btn btn-primary", id:"createbutton" %><li>
   
   </div>
 <% end %>
-
-
-<!--<%= render "devise/shared/links" %>-->
+  </div> 
+  </div>
