@@ -1,3 +1,5 @@
+
+
 <nav class="navbar sticky-top navbar-light" style="background-color:black; height:55px; border-bottom:white 3px solid;" >
     <a href="/games"><img class='icon' src="/assets/Hiscore.jpg" width="50" height="50" alt=""></a>
     
@@ -49,7 +51,7 @@
   <div class = "container">
     <div class= "row">
         <% @games.each do |b| %>
-            <div class= "col-4">
+            <div class= "col-sm-12 col-md-6 col-lg-4">
               <div class="showgame">    
                   <a><img class="GamePicture"  src="/assets/NoPhoto"></a>
                   <div>title: <%= b.title %> </div>
