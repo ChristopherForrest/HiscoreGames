@@ -5,8 +5,8 @@ class GamesController < ApplicationController
   # GET /games.json
   def index
    @games = Game.all
-   # @games = Game.all.select { |w| w.user_id == current_user.id}
-  
+   @search = Game.search(params[:q])
+   @games =  @search.result
   end
 
   # GET /games/1
