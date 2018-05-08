@@ -1,12 +1,13 @@
 <nav class="navbar sticky-top navbar-light" style="background-color:black; height:55px; border-bottom:white 3px solid;" >
     <a href="/games"><img class='icon' src="/assets/Hiscore.jpg" width="50" height="50" alt=""></a>
-    <a class="btn btn-primary" href="/users/sign_up" role="button" id="CreateAccount">Create Account</a>
+
      <%if user_signed_in?%>
      <a class="btn btn-primary" href="/games/new">New Game</a>
      <a class="btn btn-primary"<%= link_to('Log Out', destroy_user_session_path, method: :delete) %>></a>
       <!-- <%= link_to 'New Game', new_game_path %> -->
         <% else %>
         <a class="btn btn-primary" href="/users/sign_in" role="button" id="CreateAccount">Login</a> 
+            <a class="btn btn-primary" href="/users/sign_up" role="button" id="CreateAccount">Create Account</a>
      <%end%>
     <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search Users" aria-label="Search">
@@ -15,38 +16,48 @@
 </nav>
 
 <p id="notice"><%= notice %></p>
+<div class="container">
+    <div id="gameform" class="form-group">
+    <a><img class="GamePictureShow"  src="/assets/NoPhoto"></a>
+    <hr>
+<div class="col-12">
 
-<p>
+
+<h2>Product Information:</h2>
+
+<div>
+<li>
   <strong>Title:</strong>
   <%= @game.title %>
-</p>
+</li>
 
-<p>
+<li>
+  <strong>Price:</strong>
+  <span class="price">$<%= @game.price %></span>
+</li>
+
+
+<li>
   <strong>Description:</strong>
   <%= @game.description %>
-</p>
+</li>
 
-<p>
+<li>
   <strong>Genre:</strong>
   <%= @game.genre %>
-</p>
+</li>
 
-<p>
+<li>
   <strong>Category:</strong>
   <%= @game.category %>
-</p>
+</li>
 
-<p>
-  <strong>Price:</strong>
-  <%= @game.price %>
-</p>
-
-<p>
-  <strong>Sold:</strong>
-  <%= @game.sold %>
-</p>
-
-
-
-<%= link_to 'Edit', edit_game_path(@game) %> |
-<%= link_to 'Back', games_path %>
+<div>
+</div>
+<hr>
+<div class="text-center">
+<span><a id="formbutton" class="btn btn-primary btn-sx" href="/games/">Purchase</a><span>
+<span><a id="formbutton" class="btn btn-primary btn-sx" href="/games/">Back</a><span>
+</div>
+</div>
+</div>

@@ -86,14 +86,13 @@ background-color:teal;
 //     background-color: red;
 //     display: table;
 //   }
-  
-//   #error_explanation {
-//     width: 450px;
-//     border: 2px solid red;
-//     padding: 7px 7px 0;
-//     margin-bottom: 20px;
-//     background-color: #f0f0f0;
-  
+  .errormessage {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px 7px 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
 //     h2 {
 //       text-align: left;
 //       font-weight: bold;
@@ -172,6 +171,18 @@ background-color:teal;
    
  }
 
+ #gameform{
+  width:50%;
+  
+  background-color:whitesmoke;
+  margin-left:25%;
+  height:100%;
+  border-radius:2%;
+  margin-top:5%;   
+  border:grey 2px solid;
+ 
+}
+
 
 form li{
    padding-left:5%;
@@ -246,6 +257,15 @@ form li{
     
  }
 
+ .GamePictureShow{
+  height:300px;
+  width:70%;
+  padding:1%;
+  margin-left:14.5%;
+  
+}
+
+
 // .ProfileInfo{
 //     background-color: whitesmoke;
 //     width: 100%;
@@ -261,3 +281,20 @@ li{
   text-align:center;
   margin-top:5%;
 }
+
+#formbutton{
+  width:25%;
+  margin-bottom:2%;
+}
+
+
+
+.gamepreview{
+  text-align:center;
+
+}
+
+.price{
+  color:red;
+}
+
