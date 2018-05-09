@@ -4,6 +4,7 @@ class GamesController < ApplicationController
   # GET /games
   # GET /games.json
   def index
+    
    @games = Game.all
    @search = Game.search(params[:q])
    @games =  @search.result
@@ -68,6 +69,11 @@ class GamesController < ApplicationController
 
   def purchase
   end
+
+
+
+
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.
