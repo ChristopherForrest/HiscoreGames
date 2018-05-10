@@ -22,6 +22,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'ruby-graphviz', '~> 1.2', '>= 1.2.3'
+gem 'rails-erd', '~> 1.5', '>= 1.5.2'
 
 gem 'mailboxer'
 

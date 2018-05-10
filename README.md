@@ -284,3 +284,31 @@ By creating a marketplace where users can freely buy and sell vintage video game
 - I want to be able to add that user
 - So that I can contact them in future 
 “# Hiscore.com”
+
+## Workflow
+
+---
+
+
+The original workflow was conceptualised in the diagram below.
+
+![workflow](ReadMeResources/Workflow.png)
+
+## Style Guide
+
+---
+
+Colors and fonts were chosen as below:
+
+![workflow](ReadMeResources/colorguide.png)
+
+![workflow](ReadMeResources/fontchoice.png)
+
+
+Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimised for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.
+
+## Wireframes
+
+---
+
+Content first mockups were created using Figma and can be view [here](https://www.figma.com/file/FrH94nlBAHQMxdGoR9u2sWfg/Untitled)
