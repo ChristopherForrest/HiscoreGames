@@ -1,17 +1,31 @@
-<h1><%= @conversation.subject %></h1>
+
+<div class="container">
+    <div id="gameform" class="form-group">
+
+<h1>CHAT</h1>
+
+ <div class="chatwindow">
 
 <% @conversation.receipts_for(current_user).each do |receipt| %>
+<div type="textarea", class="scrollabletextbox">
     <div>
-    <div><%= receipt.message.sender.name %> commented:</div>
-        <p><%= receipt.message.body %></p>
-    <div>
+    <span><%= receipt.message.sender.name %> commented:</span>
+        <span> <%= receipt.message.body %></span>
+    </div>
+</div>
+    
 <%end%>
 
-
-<%=form_tag conversation_messages_path(@conversation), method: :post do %>
- <div>
-    <%= text_area_tag :body %>
 </div>
 
-<%= submit_tag %>
+<%=form_tag conversation_messages_path(@conversation), method: :post do %>
+
+ <div class="outerchatbox"><%= text_area_tag :body,"" ,id:"chatbox" %></div>
+
+   <li><%= submit_tag "Submit", class:"btn btn-primary", id:"createbutton" ,data: { disable_with: false }%></li>
 <%end%>
+
+
+</div>
+</div>
+</div>
