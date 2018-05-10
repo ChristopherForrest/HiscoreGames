@@ -89,11 +89,10 @@
 </div>
 <hr>
 <div class="text-center">
-
-<span><a id="formbutton" class="btn btn-primary btn-sx" href="/games/">Back</a></span>
-<% if @game.user_id == current_user.id %>
-<span><%= link_to "edit", edit_game_path(@game) %></span>
-<%end%>
+  <% if @game.user_id == current_user.id %>
+  <span><a id="formbutton" class="btn btn-primary btn-sx" <%= link_to "Edit", edit_game_path(@game) %></a></span>
+  <%end%>
+  <span><a id="formbutton" class="btn btn-primary btn-sx" href="/games/">Back</a></span>
 
 </div>
 </div>
