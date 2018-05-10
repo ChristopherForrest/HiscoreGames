@@ -34,9 +34,10 @@ class ProfilesController < ApplicationController
         end
       end
 
+      
 
       def show
-      
+       
       @profile = Profile.where(:user_id => current_user)
 
    

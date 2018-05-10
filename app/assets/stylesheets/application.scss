@@ -187,6 +187,12 @@ box-shadow: 1px 0px 31px 19px rgba(219,219,219,0.27);
  
 }
 
+#profileform{
+  width:400px;
+  height:500px;
+  border:black 1px solid;
+}
+
 
 form li{
    padding-left:5%;
@@ -376,4 +382,9 @@ li{
 #messagebutton{
   width:100%;
   border: 1px lightgrey solid;
+}
+
+.bigdiv{
+      width:500px;
+      height:500px;
 }

@@ -1,6 +1,29 @@
-<h1>Editing Game</h1>
+<nav class="navbar sticky-top navbar-light" style="background-color:black; height:55px; border-bottom:white 3px solid;" >
+    <a href="/games"><img class='icon' src="/assets/Hiscore.jpg" width="50" height="50" alt=""></a>
+    
+     <%if user_signed_in?%>
+     <a class="btn btn-primary" href="/games/new">New Game</a>
+           <a class="btn btn-primary" href="/conversations">Messages</a>
+     <a class="btn btn-primary" href="/profiles/<%=current_user.id%>">My Profile</a>
+     <a class="btn btn-primary"<%= link_to('Log Out', destroy_user_session_path, method: :delete) %>></a>
+      <!-- <%= link_to 'New Game', new_game_path %> -->
+        <% else %>
+        <a class="btn btn-primary" href="/users/sign_in" role="button" id="CreateAccount">Login</a> 
+        <a class="btn btn-primary" href="/users/sign_up" role="button" id="CreateAccount">Create Account</a>
+     <%end%>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search Games" aria-label="Search">
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
 
+
+
+<div class="container">
+    <div id="form" class="form-group">
+  <h2 class="formname">Edit Game</h2>
 <%= render 'form', game: @game %>
 
-<%= link_to 'Show', @game %> |
-<%= link_to 'Back', games_path %>
+
+
+

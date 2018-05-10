@@ -11,9 +11,7 @@
       </ul>
     </div>
   <% end %> -->
-<div class="container">
-    <div id="form" class="form-group">
-  <h2 class="formname">Create Game</h2>
+
 
   <li class="field">
     <%= form.label :title %>
@@ -41,7 +39,7 @@
   </li>
 
   <li class="actions">
-    <%= form.submit "Create", class:"btn btn-primary", id:"createbutton"%>
+    <%= form.submit "Submit", class:"btn btn-primary", id:"createbutton"%>
   </li>
 
   <li><%= link_to('Log out', destroy_user_session_path, method: :delete) %><li>
