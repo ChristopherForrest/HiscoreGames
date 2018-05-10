@@ -232,6 +232,10 @@ form li{
 //     resize:none;
 // }
 
+#good{
+  width:50px;
+}
+
 
 #ViewGame{
      margin-top:10%;
@@ -342,9 +346,34 @@ li{
   width:100%;
   resize:none;
   
+  
 }
 
 .outerchatbox{
   margin-left:5%;
-  margin-right:5%
+  margin-right:5%;
+  
+  
+}
+
+.chooseuser{
+  margin-left:40%;
+  padding-top:5%;
+  padding-bottom:5%;
+
+}
+
+#subjectbox{
+  margin-bottom:10px;
+  width:100%;
+  resize:none;
+}
+
+.messages{
+  text-align:center;
+}
+
+#messagebutton{
+  width:100%;
+  border: 1px lightgrey solid;
 }

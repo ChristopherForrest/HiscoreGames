@@ -15,7 +15,7 @@
      <%end%>
     <form class="form-inline">
       <%=search_form_for @search do |f|%>
-        <input class="form-control mr-sm-2" type="search" placeholder="Search Games" aria-label="Search"<%= f.text_field :title_cont%>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search Games" aria-label="Search"<%= f.text_field :title_cont%>>
         <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
       <%end%>
     </form>
@@ -62,10 +62,10 @@
             <div class= "col-sm-12 col-md-6 col-lg-4">
               <div class="showgame">    
                   <a><img class="GamePicture"  src="/assets/NoPhoto"></a>
-                  <div>title: <%= b.title %> </div>
-                  <div>price: <%= b.price %></div>
-                  <div>Description: <%= b.description %></div>
-                  <div>Genre: <%= b.genre %></div>
+                  <div><b>Title:</b> <%= b.title %> </div>
+                  <div><b>Price:</b>  <%= b.price %></div>
+                  <div><b>Description:</b>  <%= b.description %></div>
+                  <div><b>Genre:</b>  <%= b.genre %></div>
 
                   <a class="btn btn-primary" href="/games/<%=b.id%>" role="button" id="ViewGame">Purchase</a>
                 </div>

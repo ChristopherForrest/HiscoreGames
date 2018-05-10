@@ -22,14 +22,23 @@
 
 
 
+<div class="container">
+    <div id="gameform" class="form-group">
 
 
-<h1> All conversations </h1>
+<h1 class="formname"> All conversations </h1>
+ <div class="outerchatbox">
+ <div class="chatwindow">
 
 <% @conversations.each do |conversation| %>
-    <div>
-    <%= link_to conversation.subject, conversation_path(conversation) %>
+    <div class="messages">
+
+    <%= link_to conversation.subject, conversation_path(conversation), class:"btn btn-light", id:"messagebutton" %>
+   
     </div>
 <%end%>
-
-<%= link_to "New Conversation", new_conversation_path %>
+</div>
+<li><%= link_to "New Conversation", new_conversation_path, class:"btn btn-primary", id:"createbutton" %></li>   
+</div>
+</div>
+</div>

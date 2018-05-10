@@ -3,6 +3,8 @@
     
      <%if user_signed_in?%>
      <a class="btn btn-primary" href="/games/new">New Game</a>
+           <a class="btn btn-primary" href="/conversations">Messages</a>
+     <a class="btn btn-primary" href="/profiles/<%=current_user.id%>">My Profile</a>
      <a class="btn btn-primary"<%= link_to('Log Out', destroy_user_session_path, method: :delete) %>></a>
       <!-- <%= link_to 'New Game', new_game_path %> -->
         <% else %>
