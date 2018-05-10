@@ -4,7 +4,7 @@ class User < ApplicationRecord
   has_many :games
   has_one :profile
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
          acts_as_messageable
 
