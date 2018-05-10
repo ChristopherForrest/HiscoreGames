@@ -1,9 +1,14 @@
 # Hiscore
 
+<br>
 
 Completed as a major assessment in [Coder Academy's](https://coderacademy.edu.au/) Fast Track Bootcamp.
 
-View live:
+<br>
+
+View live: https://hiscore-games.herokuapp.com/
+
+Gitgub link: https://github.com/ChristopherForrest/HiscoreGames
 
 
 ### Table of contents
@@ -18,11 +23,14 @@ View live:
 * [User stories](#user-stories)
   * [Preliminary user stories.](#user-stories)
   * [Detailed user stories](#detailed-user-stories)
-* Workflow
-* Style guide
-* Wireframes
-* ERD
-* Trello
+* [Workflow](#workflow)
+* [Style guide](#style-guide)
+* [Wireframes](#wireframes)
+* [ERD](#erd)
+* [Trello](#trello)
+* [The Future](#the-future)
+* [Additional Links](#additional_links) 
+
 
 ## Problem Definition and Solution
 ---
@@ -312,3 +320,53 @@ Open Sans was designed with an upright stress, open forms and a neutral, yet fri
 ---
 
 Content first mockups were created using Figma and can be view [here](https://www.figma.com/file/FrH94nlBAHQMxdGoR9u2sWfg/Untitled)
+
+![wireframe](ReadMeResources/wireframes.png)
+
+
+## ERD
+
+--- 
+
+The original ERD:
+
+![ERD](ReadMeResources/initialERD.png)
+
+Refactored ERD:
+
+![ERD](ReadMeResources/fixedERD.png)
+
+
+## Trello
+
+Trello was used from the beginning of this project to track ideas and tasks, as well as completion dates.
+
+A snapshot at its final moments below:
+
+---
+![Trello](ReadMeResources/trello.png)
+
+
+
+
+
+
+## The Future
+---
+I intend to make the website more responsive across all devices/platforms aswell as implementing new features and refactoring those that had already been implemented.
+
+
+
+
+
+## Aditional Links
+
+---
+
+Link to Wireframes: ??? (Is this not Figma?)
+ 
+Link to Flowchart: https://drive.google.com/file/d/1GT2ZHgSSqdwhifpPeJ9SUQPaPHt7jjIr/view?usp=sharing
+
+Link to Figma Mockups: https://www.figma.com/file/FrH94nlBAHQMxdGoR9u2sWfg/Untitled
+
+Link to ERD: https://www.dbdesigner.net/designer/schema/167590
