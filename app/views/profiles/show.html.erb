@@ -25,26 +25,24 @@
 <div class="container">
     <div id="gameform" class="form-group">
 
-    
+
     <% @profile.each do |b| %>
-        <a><img class="GamePictureShow"  src="<%=b.profilepicture%>" onerror="this.src='assets/NoPhoto""></a>
-            <div class= "col-sm-12 col-md-6 col-lg-4">
-              <div class="showgame">    
-                 
+        <a><img class="GamePictureShow"  src="<%=b.profilepicture%>" onerror= this.src='/assets/NoPhoto'></a>
+        <hr>
+
+            <div class= "col-12">
+              <div class="showprofile">
+                <div class = "profileinfo">      
                   <div>name: <%= b.name %> </div>
                   <div>bio: <%= b.bio %> </div>
                   <div>location: <%= b.location %> </div>
                   <div>age: <%= b.age %> </div>
                   <div>favourite games: <%= b.favouritegames %> </div>
-                
-           
-
-
                 </div>
+              </div>    
+             </div> 
 
-              </div>
-          <%end%>
-  
-  
 
+          <%end%>   
+</div>
 </div>
