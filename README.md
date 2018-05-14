@@ -356,6 +356,19 @@ A snapshot at its final moments below:
 I intend to make the website more responsive across all devices/platforms aswell as implementing new features and refactoring those that had already been implemented.
 
 
+## Code Review
+--- 
+
+Throughout the process of designing this application we participated in multiple code reviews mostly via slack which we used as a tool to communicate our ideas effectively
+
+![CodeReview](ReadMeResources/code_Review.png)
+
+
+## Rspec
+---
+Rspec tests were written to tests various login features to ensure fake/invalid or multiple users could not be created.
+
+
 
 
 
