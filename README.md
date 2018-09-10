@@ -3,7 +3,6 @@
 
 View live: https://hiscore-games.herokuapp.com/
 
-Gitgub link: https://github.com/ChristopherForrest/HiscoreGames
 
 
 ### Table of contents
