@@ -1,10 +1,5 @@
 # Hiscore
 
-<br>
-
-Completed as a major assessment in [Coder Academy's](https://coderacademy.edu.au/) Fast Track Bootcamp.
-
-<br>
 
 View live: https://hiscore-games.herokuapp.com/
 
